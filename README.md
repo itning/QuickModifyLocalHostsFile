@@ -1,0 +1,2 @@
+# QuickModifyLocalHostsFile
+一个快速修改本地Hosts的小工具

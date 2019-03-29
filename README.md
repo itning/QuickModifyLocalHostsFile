@@ -17,3 +17,5 @@
 
 
 [**立即下载**](https://github.com/itning/QuickModifyLocalHostsFile/releases)
+
+![preview](https://raw.githubusercontent.com/itning/QuickModifyLocalHostsFile/master/preview.png)

@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuickModifyLocalHostsFile"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="快速修改Hosts文件（Ctrl+S 保存，Ctrl+鼠标滚轮 字体缩放）" Height="450" Width="800">
+    <Window.Resources>
+        <RoutedUICommand x:Key="SaveHostsFile" Text="Save File" />
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Gesture="Ctrl+S" Command="{StaticResource SaveHostsFile}"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource SaveHostsFile}"
+                        CanExecute="CommandBinding_Save_CanExecute"
+                        Executed="CommandBinding_Save_Executed"/>
+    </Window.CommandBindings>
+    <DockPanel>
+        <TextBox Name="TextBox" 
+                 FontSize="20"
+                 MouseWheel="TextBox_OnMouseWheel"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True" 
+                 VerticalScrollBarVisibility="Auto"/>
+    </DockPanel>
 </Window>

@@ -19,6 +19,7 @@ namespace QuickModifyLocalHostsFile.file
             {
                 File.Create(HOSTS_FILE_PATH).Close();
             }
+            RemoveFileReadOnlyIfNecessary(HOSTS_FILE_PATH);
         }
 
         public static HostsFileHandler GetInstance()
@@ -41,6 +42,14 @@ namespace QuickModifyLocalHostsFile.file
             streamWriter.Write(hostsString);
             streamWriter.Flush();
             streamWriter.Close();
+        }
+
+        private void RemoveFileReadOnlyIfNecessary(string filePath)
+        {
+            if (File.GetAttributes(filePath).ToString().IndexOf("ReadOnly") != -1)
+            {
+                File.SetAttributes(filePath, FileAttributes.Normal);
+            }
         }
     }
 }

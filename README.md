@@ -13,7 +13,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/itning/QuickModifyLocalHostsFile.svg)](https://github.com/itning/QuickModifyLocalHostsFile/commits)
 [![GitHub release](https://img.shields.io/github/release/itning/QuickModifyLocalHostsFile.svg)](https://github.com/itning/QuickModifyLocalHostsFile/releases)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/itning/QuickModifyLocalHostsFile.svg)](https://github.com/itning/QuickModifyLocalHostsFile)
-[![HitCount](http://hits.dwyl.io/itning/QuickModifyLocalHostsFile.svg)](http://hits.dwyl.io/itning/QuickModifyLocalHostsFile)
+[![HitCount](https://hitcount.itning.com?u=itning&r=QuickModifyLocalHostsFile)](https://hitcount.itning.com/?u=itning&r=QuickModifyLocalHostsFile)
 [![language](https://img.shields.io/badge/language-C%23-green.svg)](https://github.com/itning/QuickModifyLocalHostsFile)
 
 
